@@ -1,6 +1,6 @@
 from Projeto.modelos.funcionario        import Funcionario
 from Projeto.modelos.endereco           import Endereco
-from Projeto.modelos.enums.sexo         import Sexo
+
 
 class Medico(Funcionario):
     def __init__(self, nome, telefone, email, salario, endereco, crm: str):

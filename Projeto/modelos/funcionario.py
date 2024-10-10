@@ -1,6 +1,6 @@
 from Projeto.modelos.endereco import Endereco
 from Projeto.modelos.enums.unidadeFederativa import UnidadeFederativa
-from Projeto.modelos.enums.sexo import Sexo
+
 
 class Funcionario:
     def __init__(self, nome: str, telefone: str, email: str,salario: int, endereco: Endereco) -> None:
