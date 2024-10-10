@@ -2,7 +2,7 @@ import pytest
 from Projeto.modelos.funcionario import Funcionario
 from Projeto.modelos.endereco   import Endereco
 from Projeto.modelos.enums.unidadeFederativa import UnidadeFederativa
-from Projeto.modelos.enums.sexo import Sexo
+
 
 # Boas práticas de progamação.
 @pytest.fixture
