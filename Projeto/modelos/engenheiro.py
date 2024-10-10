@@ -1,14 +1,11 @@
 from Projeto.modelos.funcionario        import Funcionario
 from Projeto.modelos.endereco           import Endereco
-from Projeto.modelos.enums.sexo         import Sexo
+
 
 class Engenheiro(Funcionario):
-    def __init__(self,nome:str,telefone:str,email:str,
-                 endereco: Endereco,
-                 sexo: Sexo ,
-                 dataNascimento: str ,cpf:str,rg:str,matricula:str,salario:float,crea:str) -> None:
-        super().__init__(nome ,telefone ,email ,endereco ,sexo ,dataNascimento,cpf,rg,matricula,salario)
-        self.crea = self._verificar_crea(crea)
+    def __init__(self, nome, telefone, email, salario, endereco, crea: str):
+       super().__init__(nome, telefone, email, salario, endereco)
+       self.crea = self._verificar_crea(crea)
     
     # Métodos de verificar
     def _verificar_crea(self,valor):

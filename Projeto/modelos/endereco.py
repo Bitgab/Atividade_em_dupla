@@ -1,10 +1,10 @@
-from modelos.enums.unidadeFederativa import UnidadeFederativa
+from Projeto.modelos.enums.unidadeFederativa import UnidadeFederativa
 
 class Endereco:
     def __init__(self,logradouro: str, numero: str, complemento: str, cep: str, cidade: str, uf: UnidadeFederativa) -> None:
         self.logradouro = self._verificar_logradouro(logradouro)
         self.numero = self._verificar_numero(numero)
-        self.complemento = self._verificar_compleento(complemento)
+        self.complemento = self._verificar_complemento(complemento)
         self.cep         = self._verificar_cep(cep)
         self.cidade      = self._verificar_cidade(cidade)
         self.uf          = uf

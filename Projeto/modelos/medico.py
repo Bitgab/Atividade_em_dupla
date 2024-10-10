@@ -3,11 +3,8 @@ from Projeto.modelos.endereco           import Endereco
 from Projeto.modelos.enums.sexo         import Sexo
 
 class Medico(Funcionario):
-    def __init__(self,nome:str,telefone:str,email:str,
-                 endereco: Endereco,
-                 sexo: Sexo ,
-                 dataNascimento: str ,cpf:str,rg:str,matricula:str,salario:float,crm:str) -> None:
-        super().__init__(nome ,telefone ,email ,endereco ,sexo ,dataNascimento,cpf,rg,matricula,salario)
+    def __init__(self, nome, telefone, email, salario, endereco, crm: str):
+        super().__init__(nome, telefone, email, salario, endereco)
         self.crm = self._verificar_crm(crm)
     
     # Métodos de verificar
