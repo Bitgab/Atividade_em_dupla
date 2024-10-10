@@ -1,3 +1,15 @@
+    # =========================== #
+    #        Samir Santos         #
+    #                             #
+    #        Gabrel Bittecurt     #
+    #                             #
+    #        Turma 91210          #
+    #                             #
+    #        Senai || Fieb        #
+    #                             #
+    #        Salvador/BA          #
+    # =========================== #
+
 import os 
 import sys
 os.system("cls || clear")
