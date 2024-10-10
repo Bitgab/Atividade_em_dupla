@@ -7,7 +7,7 @@ from Projeto.modelos.enums.unidadeFederativa import UnidadeFederativa
 # Boas práticas de progamação.
 @pytest.fixture
 def engenheiro_valido():
-    engenheiro = Engenheiro('Gabriel Fuboca','71555-9555','gabriel.fuboca@gmail.com',100,Endereco('Rua A', '33','logo ali', '45658-565','salvador',UnidadeFederativa.SAO_PAULO),Sexo.MASCULINO,'017')
+    engenheiro = Engenheiro('Gabriel Fuboca','71555-9555','gabriel.fuboca@gmail.com',100,Endereco('Rua A', '33','logo ali', '45658-565','salvador',UnidadeFederativa.SAO_PAULO),'017')
     return engenheiro
 
 def test_verificar_crea_tipo_invalido_retorna_erro(engenheiro_valido):
