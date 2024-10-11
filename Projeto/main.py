@@ -9,16 +9,18 @@
     #                             #
     #        Salvador/BA          #
     # =========================== #
-
+#python -m Projeto.main
 import os 
 import sys
 os.system("cls || clear")
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
-from Projeto.modelos.engenheiro import Engenheiro
-from Projeto.modelos.funcionario import Funcionario
-from Projeto.modelos.endereco import Endereco
-from Projeto.modelos.medico import Medico
-from Projeto.modelos.enums.unidadeFederativa import UnidadeFederativa
+
+from modelos.enums.unidadeFederativa import UnidadeFederativa
+from modelos.endereco import Endereco
+from modelos.funcionario import Funcionario
+from modelos.engenheiro import Engenheiro
+from modelos.medico import Medico
+
 
 
 funcionario = Funcionario("Fuboca","71912345678","fuboca@gmail.com",1000,Endereco("Rua A","12","Perto","1234567","Salvador",UnidadeFederativa.BAHIA))

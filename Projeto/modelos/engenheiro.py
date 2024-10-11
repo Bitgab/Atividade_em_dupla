@@ -1,5 +1,5 @@
-from Projeto.modelos.funcionario        import Funcionario
-from Projeto.modelos.endereco           import Endereco
+from Projeto.modelos.funcionario import Funcionario
+
 
 
 class Engenheiro(Funcionario):

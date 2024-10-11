@@ -1,5 +1,5 @@
 from Projeto.modelos.endereco import Endereco
-from Projeto.modelos.enums.unidadeFederativa import UnidadeFederativa
+
 
 
 class Funcionario:
