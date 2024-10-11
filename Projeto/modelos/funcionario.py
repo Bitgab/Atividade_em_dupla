@@ -1,14 +1,15 @@
+from abc import ABC, abstractmethod
 from Projeto.modelos.endereco import Endereco
 
-
-
-class Funcionario:
+@abstractmethod
+class Funcionario(ABC):
     def __init__(self, nome: str, telefone: str, email: str,salario: int, endereco: Endereco) -> None:
         self.nome     = self._verificar_nome(nome)
         self.telefone = self._verificar_telefone(telefone)
         self.email    = self._verificar_email(email)
-        self.salario     = self._verificar_salario(salario)
+        self.salario  = self._verificar_salario(salario)
         self.endereco = endereco
+        
 
     def _verificar_nome(self,valor):
         """Método para verificação de nome."""
@@ -93,3 +94,14 @@ class Funcionario:
         """Método para verificar salário negativo.""" 
         if valor <= 0:
             raise ValueError ("O salario não pode ser negativo.")
+
+
+    def __str__(self) -> str:
+        return (            
+            f"\nNome: {self.nome}"
+            f"\nTelefone: {self.telefone}"
+            f"\nEmail: {self.email}"
+            f"\nSalário: R$ {self.salario} reais"  
+            #f"\nSalário final: R$ {self.salario_final()} reais"
+            f"\nEndereço: {self.endereco}"
+            )

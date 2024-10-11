@@ -32,4 +32,4 @@ engenheiro = Engenheiro('Gabriel Fuboca','71555-9555','gabriel.fuboca@gmail.com'
 if __name__ == '__main__':
     os.system('pytest ')
 
-print(funcionario)
+print(engenheiro)

@@ -20,7 +20,6 @@ class Endereco:
 
     def _verificar_numero(self,valor):
         """Método para verificação de número."""
-        #self._verificar_numero_tipo_invalido(valor)
         self._verificar_numero_vazio_invalido(valor)
 
         self.numero = valor
@@ -91,4 +90,16 @@ class Endereco:
     def _verificar_cidade_vazio_invalido(self,valor):
         """Método auxiliar para verificação cidade do tipo vazio """
         if not valor.strip(): 
-            raise TypeError("O campo de cidade não pode estar vazia")  
+            raise TypeError("O campo de cidade não pode estar vazia")
+
+
+    def __str__(self) -> str:
+        return (
+            f"\nLogradouro: {self.logradouro}"
+            f"\nNumero: {self.numero}"
+            f"\nComplemento: {self.complemento}"
+            f"\nCEP: {self.cep}"
+            f"\nCidade: {self.cidade}"
+            f"\nUnidade Federativa: {self.uf.value}"
+
+        )
